@@ -1,0 +1,24 @@
+fastapi==0.95.1
+uvicorn[standard]==0.22.0
+pydantic==1.10.7
+SQLAlchemy==1.4.47
+python-dotenv==1.0.0
+requests==2.31.0
+openai==0.27.7
+
+psycopg2-binary==2.9.7  # PostgreSQL
+# aiomysql==0.1.1       # MySQL 사용 시
+# oracledb==1.4.3       # Oracle 사용 시
+alembic==1.11.1         # DB 마이그레이션
+
+# OAuth2
+oauthlib==3.2.2
+httpx-oauth==0.9.0
+
+# 캐싱 레이어
+redis==4.6.0
+# 혹은 pymemcache==3.5.2 (Memcached)
+
+# 모니터링/로그
+uvicorn[standard]==0.22.0  # (여기 포함된 gunicorn, httptools 등)
+prometheus-fastapi-instrumentator==5.9.2
